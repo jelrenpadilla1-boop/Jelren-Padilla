@@ -11,21 +11,22 @@
     rel="stylesheet" />
   <style>
     /* ============================================================
-                   ROOT & RESET
-                   ============================================================ */
+               ROOT & RESET — ORANGE THEME
+               ============================================================ */
     :root {
       --bg: #060a12;
       --surface: #0e1420;
       --surface2: #141c2c;
       --line: rgba(255, 255, 255, 0.08);
-      --cyan: #35e6ff;
+      --orange: #ff7a00;
+      /* primary accent — orange */
       --amber: #ffb84d;
+      /* complementary warm */
       --text: #eef3fa;
       --muted: #7c8aa0;
       --radius: 14px;
       --nav-height: 70px;
       --avatar-size: 160px;
-      /* Increased avatar size */
     }
 
     * {
@@ -106,15 +107,15 @@
       width: 38px;
       height: 38px;
       border-radius: 9px;
-      border: 1px solid rgba(53, 230, 255, 0.4);
+      border: 1px solid rgba(255, 122, 0, 0.4);
       display: flex;
       align-items: center;
       justify-content: center;
       font-family: 'Space Grotesk', sans-serif;
       font-weight: 700;
       font-size: 14px;
-      color: var(--cyan);
-      background: linear-gradient(160deg, rgba(53, 230, 255, 0.12), transparent);
+      color: var(--orange);
+      background: linear-gradient(160deg, rgba(255, 122, 0, 0.12), transparent);
       flex-shrink: 0;
     }
 
@@ -205,7 +206,7 @@
     }
 
     .nav-overlay a:hover {
-      color: var(--cyan);
+      color: var(--orange);
     }
 
     .nav-overlay .close-hint {
@@ -258,7 +259,7 @@
       font-family: 'JetBrains Mono', monospace;
       font-size: 11px;
       letter-spacing: 0.14em;
-      color: var(--cyan);
+      color: var(--orange);
       text-transform: uppercase;
       margin-bottom: 18px;
       display: flex;
@@ -270,7 +271,7 @@
       content: '';
       width: 22px;
       height: 1px;
-      background: var(--cyan);
+      background: var(--orange);
       flex-shrink: 0;
     }
 
@@ -282,7 +283,7 @@
     }
 
     .hero h1 span {
-      color: var(--cyan);
+      color: var(--orange);
     }
 
     .hero p.sub {
@@ -315,15 +316,15 @@
     }
 
     .btn-primary {
-      background: var(--cyan);
+      background: var(--orange);
       color: #04121a;
       font-weight: 600;
-      box-shadow: 0 0 0 0 rgba(53, 230, 255, 0.4);
+      box-shadow: 0 0 0 0 rgba(255, 122, 0, 0.4);
     }
 
     .btn-primary:hover {
       transform: translateY(-3px);
-      box-shadow: 0 10px 30px -8px rgba(53, 230, 255, 0.5);
+      box-shadow: 0 10px 30px -8px rgba(255, 122, 0, 0.5);
     }
 
     .btn-primary:active {
@@ -363,7 +364,7 @@
     .scroll-cue .line {
       width: 1px;
       height: 32px;
-      background: linear-gradient(var(--cyan), transparent);
+      background: linear-gradient(var(--orange), transparent);
       animation: pulse 2s ease-in-out infinite;
     }
 
@@ -441,7 +442,7 @@
     }
 
     .stat {
-      border-left: 2px solid var(--cyan);
+      border-left: 2px solid var(--orange);
       padding-left: 14px;
     }
 
@@ -488,11 +489,11 @@
       border-radius: 50%;
       flex-shrink: 0;
       overflow: hidden;
-      background: conic-gradient(from 180deg, var(--cyan), var(--amber), var(--cyan));
+      background: conic-gradient(from 180deg, var(--orange), var(--amber), var(--orange));
       display: flex;
       align-items: center;
       justify-content: center;
-      box-shadow: 0 0 50px -6px rgba(53, 230, 255, 0.6);
+      box-shadow: 0 0 50px -6px rgba(255, 122, 0, 0.6);
     }
 
     .avatar-orb .avatar-img {
@@ -510,7 +511,7 @@
     }
 
     .avatar-card .role {
-      color: var(--cyan);
+      color: var(--orange);
       font-family: 'JetBrains Mono', monospace;
       font-size: 12px;
     }
@@ -570,7 +571,7 @@
       top: 7px;
       width: 5px;
       height: 5px;
-      background: var(--cyan);
+      background: var(--orange);
       border-radius: 1px;
     }
 
@@ -657,18 +658,18 @@
       height: 10px;
       border-radius: 50%;
       background: var(--bg);
-      border: 2px solid var(--cyan);
+      border: 2px solid var(--orange);
     }
 
     .tl-item.current::before {
-      background: var(--cyan);
-      box-shadow: 0 0 0 4px rgba(53, 230, 255, 0.15);
+      background: var(--orange);
+      box-shadow: 0 0 0 4px rgba(255, 122, 0, 0.15);
     }
 
     .tl-date {
       font-family: 'JetBrains Mono', monospace;
       font-size: 10.5px;
-      color: var(--cyan);
+      color: var(--orange);
       margin-bottom: 4px;
       display: block;
     }
@@ -691,7 +692,7 @@
       border-radius: 20px;
       padding: 48px 28px;
       text-align: center;
-      background: radial-gradient(ellipse at 50% 0%, rgba(53, 230, 255, 0.08), transparent 60%);
+      background: radial-gradient(ellipse at 50% 0%, rgba(255, 122, 0, 0.08), transparent 60%);
     }
 
     .contact-box .eyebrow {
@@ -732,8 +733,8 @@
     }
 
     .contact-links a:hover {
-      border-color: var(--cyan);
-      color: var(--cyan);
+      border-color: var(--orange);
+      color: var(--orange);
       transform: translateY(-2px);
     }
 
@@ -879,7 +880,6 @@
       :root {
         --nav-height: 60px;
         --avatar-size: 120px;
-        /* Big but fits small screens */
       }
 
       nav {
@@ -1217,8 +1217,7 @@
       <div class="eyebrow">Portfolio — Systems &amp; Code</div>
       <h1>Jelren<br /><span>Padilla.</span></h1>
       <p class="sub">BS Information Technology student at Trinidad Municipal College — building networks, software,
-        and
-        everything that connects them.</p>
+        and everything that connects them.</p>
       <div class="cta-row">
         <a href="#projects" class="btn btn-primary">View Projects</a>
         <a href="#contact" class="btn btn-ghost">Get in Touch</a>
@@ -1237,14 +1236,12 @@
         <div class="eyebrow">About</div>
         <h2 style="margin-bottom:18px;">Hello, I'm Jelren.</h2>
         <p>I'm an <strong>IT student at Trinidad Municipal College</strong>, currently building my foundation
-          across
-          programming, web development, and networking. I like taking systems apart — literally and
-          figuratively — to
-          understand how they actually work, then putting them back together a little better.</p>
+          across programming, web development, and networking. I like taking systems apart — literally and
+          figuratively — to understand how they actually work, then putting them back together a little better.
+        </p>
         <p>Outside of coursework, I spend time experimenting with small web projects and learning how hardware,
           networks, and code fit together in the real world. I'm looking for opportunities to apply what I'm
-          learning
-          through internships, on-the-job training, and collaborative projects.</p>
+          learning through internships, on-the-job training, and collaborative projects.</p>
         <div class="stat-row">
           <div class="stat">
             <div class="num">IT</div>
@@ -1263,11 +1260,7 @@
       <div class="tilt-card avatar-card reveal">
         <div class="tilt-inner">
           <div class="avatar-orb">
-            <!--
-                        =====================================================
-                        REPLACE THE src ATTRIBUTE BELOW WITH YOUR OWN IMAGE URL
-                        =====================================================
-                        -->
+            <!-- Replace src with your own image -->
             <img src="jelren.jpg" alt="Jelren Padilla" class="avatar-img" />
           </div>
           <h3>Jelren Padilla</h3>
@@ -1351,8 +1344,7 @@
             <div class="idx">01 / sample</div>
             <h4>Campus Event Tracker</h4>
             <p>A concept web app for managing school events and RSVPs, built to practice front-end layout
-              alongside a
-              simple database-backed back end.</p>
+              alongside a simple database-backed back end.</p>
             <div class="stack"><span>HTML/CSS/JS</span><span>PHP</span><span>MySQL</span></div>
           </div>
         </div>
@@ -1361,8 +1353,7 @@
             <div class="idx">02 / sample</div>
             <h4>Home Network Setup</h4>
             <p>Documented a small LAN build — device configuration, subnetting, and troubleshooting steps —
-              as a
-              hands-on networking exercise.</p>
+              as a hands-on networking exercise.</p>
             <div class="stack"><span>Networking</span><span>Subnetting</span><span>Docs</span></div>
           </div>
         </div>
@@ -1371,13 +1362,13 @@
             <div class="idx">03 / this site</div>
             <h4>Personal Portfolio</h4>
             <p>This 3D portfolio site — a WebGL hero scene and tilt-responsive interface built to showcase
-              coursework
-              and projects.</p>
+              coursework and projects.</p>
             <div class="stack"><span>Three.js</span><span>CSS 3D</span><span>JavaScript</span></div>
           </div>
         </div>
       </div>
-
+      <p class="mono projects-note" style="color:var(--muted);">↳ Sample projects shown above — tell me about your
+        real projects and I'll swap these in.</p>
     </div>
   </section>
 
@@ -1415,12 +1406,11 @@
         <div class="eyebrow" style="justify-content:center;">Let's connect</div>
         <h2>Open to internships &amp; OJT opportunities.</h2>
         <p>Currently studying IT at Trinidad Municipal College and looking to apply what I've learned through
-          real-world
-          projects and training.</p>
+          real-world projects and training.</p>
         <div class="contact-links">
-          <a href="mailto:jelrenpadilla1@example.com">jelrenpadilla1@gmail.com</a>
-          <a href="https://github.com/jelrenpadilla1-boop">GitHub</a>
-          <a href="https://www.facebook.com/jelrenxc">Facebook</a>
+          <a href="mailto:jelrenpadilla1@gmail.com">jelrenpadilla1@gmail.com</a>
+          <a href="https://github.com/jelrenpadilla1-boop" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.facebook.com/jelrenxc" target="_blank" rel="noopener noreferrer">Facebook</a>
         </div>
       </div>
     </div>
@@ -1536,7 +1526,7 @@
             inner.style.transform = 'rotateY(0deg) rotateX(0deg) translateZ(0)';
           });
 
-          // Touch (with a small threshold to avoid accidental tilts)
+          // Touch
           let touchX = 0,
             touchY = 0;
           let isTouching = false;
@@ -1575,7 +1565,7 @@
         });
       }
 
-      // ---- THREE.JS HERO ----
+      // ---- THREE.JS HERO (ORANGE THEME) ----
       (function () {
         const canvas = document.getElementById('hero-canvas');
         if (!canvas) return;
@@ -1598,11 +1588,11 @@
         const group = new THREE.Group();
         scene.add(group);
 
-        // Icosahedron
+        // Icosahedron — wireframe in orange
         const detail = isMobile ? 0 : 1;
         const geo = new THREE.IcosahedronGeometry(1.9, detail);
         const wireMat = new THREE.MeshBasicMaterial({
-          color: 0x35e6ff,
+          color: 0xff7a00, // orange
           wireframe: true,
           transparent: true,
           opacity: 0.35
@@ -1610,12 +1600,12 @@
         const wireMesh = new THREE.Mesh(geo, wireMat);
         group.add(wireMesh);
 
-        // Nodes
+        // Nodes — warm amber/orange
         const posAttr = geo.attributes.position;
         const nodeGeo = new THREE.BufferGeometry();
         nodeGeo.setAttribute('position', posAttr);
         const nodeMat = new THREE.PointsMaterial({
-          color: 0xffb84d,
+          color: 0xffb84d, // amber
           size: isMobile ? 0.045 : 0.055,
           transparent: true,
           opacity: 0.9
@@ -1623,7 +1613,7 @@
         const nodes = new THREE.Points(nodeGeo, nodeMat);
         group.add(nodes);
 
-        // Outer particles
+        // Outer particles — orange tint
         const starCount = isMobile ? 120 : 260;
         const starGeo = new THREE.BufferGeometry();
         const starPos = new Float32Array(starCount * 3);
@@ -1637,7 +1627,7 @@
         }
         starGeo.setAttribute('position', new THREE.BufferAttribute(starPos, 3));
         const starMat = new THREE.PointsMaterial({
-          color: 0x35e6ff,
+          color: 0xff7a00,
           size: isMobile ? 0.02 : 0.025,
           transparent: true,
           opacity: 0.45
@@ -1650,7 +1640,6 @@
         let targetX = 0,
           targetY = 0;
 
-        // Mouse / touch tracking
         function onPointerMove(x, y) {
           targetX = (x / window.innerWidth - 0.5);
           targetY = (y / window.innerHeight - 0.5);
@@ -1673,7 +1662,6 @@
           camera.aspect = w / h;
           camera.updateProjectionMatrix();
           renderer.setSize(w, h);
-          // Adjust pixel ratio on resize
           const newDpr = Math.min(window.devicePixelRatio || 1, w < 768 ? 1.2 : 2);
           renderer.setPixelRatio(newDpr);
         }, { passive: true });
@@ -1681,14 +1669,12 @@
         function animate() {
           requestAnimationFrame(animate);
 
-          // Smooth rotation
           if (!reduceMotion) {
             group.rotation.y += 0.0022;
             group.rotation.x += 0.0008;
             stars.rotation.y -= 0.0004;
           }
 
-          // Smooth mouse follow
           mouseX += (targetX - mouseX) * 0.06;
           mouseY += (targetY - mouseY) * 0.06;
 
